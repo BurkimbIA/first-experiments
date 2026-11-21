@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "torch>=2.7",
     "torchaudio>=2.7",
+    "torchcodec>=0.8",
     "transformers>=5.0",
     "accelerate>=1.0",
     "datasets[audio]>=4.0",
@@ -30,6 +31,7 @@ dev = [
 [tool.uv.sources]
 torch = { index = "pytorch-cu126" }
 torchaudio = { index = "pytorch-cu126" }
+torchcodec = { index = "pytorch-cu126" }
 
 [[tool.uv.index]]
 name = "pytorch-cu126"
